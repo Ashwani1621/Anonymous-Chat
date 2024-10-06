@@ -1,4 +1,4 @@
-**1. Define Core Features**
+**1. Define Core Features**<br>
 Anonymous Sign-Up/Login: No personal information (name, email) should be required.
 Chat Rooms: Allow users to join predefined or dynamic chat rooms (e.g., by topic, event, or random).
 Direct Messages (Optional): Allow one-on-one anonymous conversations.
@@ -6,7 +6,7 @@ Message History: Store messages temporarily, but ensure privacy and implement me
 Moderation: Implement basic moderation to prevent inappropriate content.
 User Reporting: Allow users to report abusive behavior.
 
-**2. Tech Stack Selection**
+**2. Tech Stack Selection**<br>
 Frontend (User Interface):
 
 HTML/CSS: Basic structure and styling.
@@ -25,7 +25,7 @@ Hosting:
 Heroku or Vercel: For deploying the app.
 MongoDB Atlas: For cloud-hosted databases.
 
-**3. Design User Interface (UI)**
+**3. Design User Interface (UI)**<br>
 Chat Room List: Display active rooms, allow users to join or create new ones.
 Message Interface: Simple chat interface with:
 Message input box
@@ -33,7 +33,7 @@ Sent/received messages
 User avatars (randomly generated for anonymity)
 Anonymity Controls: Allow users to change display names randomly or shuffle.
 
-**4. Backend Functionality**
+**4. Backend Functionality**<br>
 User Anonymity:
 Assign random user IDs when a user connects.
 Allow temporary nicknames (e.g., "User1234").
@@ -45,7 +45,7 @@ Implement a system to filter inappropriate words using a library like bad-words.
 Allow messages to be flagged for review.
 Consider adding basic rate-limiting to prevent spam.
 
-**5. Database Setup**
+**5. Database Setup**<br>
 Message Storage:
 Store messages temporarily with a timestamp.
 Set up a cron job to delete messages after a certain time (e.g., 24 hours).
@@ -56,20 +56,20 @@ Optional Features:
 Implement "like" or "emoji" reactions for messages.
 Allow users to report inappropriate messages.
 
-**6. Security and Privacy**
+**6. Security and Privacy**<br>
 Anonymous Authentication: No personal details, generate random usernames.
 Message Encryption: Use end-to-end encryption for sensitive messages (optional).
 Moderation and Reporting: Make sure to log abusive behavior without tracking user identities.
 Token-Based Access: Use tokens for session management, ensuring the app doesn’t leak user info.
 
-**7. Frontend Implementation**
+**7. Frontend Implementation**<br>
 Create basic components:
 Login/Join Screen: Allow users to pick random usernames and select chat rooms.
 Chat Interface: Display messages, users, and active rooms.
 Room List: A page where users can select/join rooms.
 Message Input: For users to send messages in real-time.
 
-**8. Testing and Deployment**
+**8. Testing and Deployment**<br>
 Test the app thoroughly:
 Ensure messages are sent/received properly.
 Test for edge cases (e.g., empty rooms, message overload).
@@ -78,7 +78,7 @@ Deploy:
 Use Heroku/Vercel for hosting the backend and frontend.
 Use MongoDB Atlas for a cloud database.
 
-**9. Launch and Feedback**
+**9. Launch and Feedback**<br>
 Release the app to a small group of students for initial testing and feedback.
 Gather feedback, especially about usability, performance, and privacy concerns.
 Iterate on the app based on user input.
